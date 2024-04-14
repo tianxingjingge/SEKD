@@ -2,7 +2,7 @@
 
 Multi-Level Feature Distillation via Channel Relational Graph
 
-
+  
 
 ## Installation
 
@@ -44,3 +44,7 @@ For **debugging**:
 ```
 ./start_train.sh debugtrain projects/Distillation/configs/Distillation-FasterRCNN-R18-R50-dsig-1x.yaml
 ```
+
+## TODO
+
+We have only uploaded the code for the graph distillation part. The code for the spectral embedding part and more experimental details will be released gradually.
