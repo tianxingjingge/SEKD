@@ -21,13 +21,13 @@ Image[TODO]
 - Torchvision >= 0.8.1
 - Pycocotools 2.0.2
 
-Follow the install instructions in detectron2, note that in this repo we use detectron2 commit version `ff638c931d5999f29c22c1d46a3023e67a5ae6a1`. Download [COCO](https://cocodataset.org/) dataset and `export DETECTRON2_DATASETS=$COCOPATH` to direct to COCO dataset. We prepare our pre-trained weights for training in `Student-Teacher` format, please follow the instructions in [Pretrained]([SEKD/projects/Distillation/pretrained at master · tianxingjingge/SEKD (github.com)](https://github.com/tianxingjingge/SEKD/tree/master/projects/Distillation/pretrained))
+Follow the install instructions in detectron2, note that in this repo we use detectron2 commit version `ff638c931d5999f29c22c1d46a3023e67a5ae6a1`. Download [COCO](https://cocodataset.org/) dataset and `export DETECTRON2_DATASETS=$COCOPATH` to direct to COCO dataset. We prepare our pre-trained weights for training in `Student-Teacher` format, please follow the instructions in [Pretrained](https://github.com/tianxingjingge/SEKD/tree/master/projects/Distillation/pretrained)
 
 ## Running
 
 
 
-We prepare training [configs]([SEKD/projects/Distillation/configs at master · tianxingjingge/SEKD (github.com)](https://github.com/tianxingjingge/SEKD/tree/master/projects/Distillation/configs)) following the detectron2 format. For **training** a Faster R-CNN R18-FPN student with a Faster R-CNN R50-FPN teacher on 8 GPUs:
+We prepare training [configs](https://github.com/tianxingjingge/SEKD/tree/master/projects/Distillation/configs) following the detectron2 format. For **training** a Faster R-CNN R18-FPN student with a Faster R-CNN R50-FPN teacher on 8 GPUs:
 
 ```
 ./start_train.sh train projects/Distillation/configs/Distillation-FasterRCNN-R18-R50-dsig-1x.yaml
